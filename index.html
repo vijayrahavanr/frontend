@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="apple-touch-icon" href="/vite.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2563EB" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="AI-Powered Smart Attendance & Performance Analytics System"
+    />
+    <title>AI Smart Attendance & Performance Analytics</title>
+  </head>
+  <body>
+    <noscript>
+      <div style="padding: 2rem; font-family: system-ui, sans-serif; text-align: center;">
+        This application requires JavaScript to run. Please enable JavaScript in your browser
+        and reload the page.
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <script>
+      // Pairs with public/404.html for GitHub Pages deep-link support.
+      // No-ops on Vercel/Netlify/Docker+Nginx, which rewrite server-side
+      // and never produce a `?redirect=` param.
+      (function () {
+        var redirect = new URLSearchParams(window.location.search).get('redirect');
+        if (redirect) {
+          window.history.replaceState(null, '', '/' + redirect);
+        }
+      })();
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

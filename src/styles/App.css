@@ -1,0 +1,29 @@
+/*
+  App.css
+  Reserved for app-shell specific styles that don't fit neatly into
+  Tailwind utility classes (e.g. complex layout grids, print styles).
+  Keep this file lean — prefer Tailwind utilities and MUI theme
+  overrides first.
+*/
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.app-shell__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.page-fade-enter {
+  opacity: 0;
+}
+
+.page-fade-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
